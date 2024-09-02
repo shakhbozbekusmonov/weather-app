@@ -1,50 +1,78 @@
-# Welcome to your Expo app 👋
+# React Native Weather App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a React Native application that displays the current weather information based on the user's location or a searched location. The app uses Expo for development and leverages the OpenWeatherMap API to fetch weather data.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Fetch Weather by Location**: Automatically fetches and displays weather data based on the user's current location.
+- **Search for Weather**: Allows users to search for weather information by entering a location.
+- **Custom Weather Icons**: Displays weather conditions using custom icons from OpenWeatherMap.
+- **Responsive Design**: The app is styled to be responsive and visually appealing on various screen sizes.
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/yourusername/weather-app.git
+   cd weather-app
+   ```
+
+2. **Install the dependencies:**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Create an `.env` file in the root directory and add your OpenWeatherMap API key:**
 
-   ```bash
-    npx expo start
+   ```env
+   EXPO_PUBLIC_API_URL=your_api_url_here
+   EXPO_PRIVATE_API_KEY=your_api_key_here
    ```
 
-In the output, you'll find options to open the app in a
+4. **Start the development server:**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   npm start
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Usage
 
-## Get a fresh project
+- **Getting Weather by Location:**
 
-When you're ready, run:
+  - On app launch, the app requests permission to access the device's location.
+  - If permission is granted, it fetches the current weather data for the user's location and displays it.
 
-```bash
-npm run reset-project
-```
+- **Searching for Weather:**
+  - Enter a city name in the search bar and click "Search" to fetch weather data for the entered location.
+  - If the location is not found, an alert will notify the user to try again.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Components
 
-## Learn more
+- **Welcome**: The main component that manages the state and logic for fetching and displaying weather data.
+- **Weather**: A presentational component that displays the weather data, including temperature, condition, and icons.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Dependencies
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **React**: For building the UI components.
+- **React Native**: For mobile app development.
+- **Expo**: For easier development and deployment of the React Native app.
+- **Axios**: For making HTTP requests to the OpenWeatherMap API.
+- **Expo Location**: For accessing the user's location.
 
-## Join the community
+## Customization
 
-Join our community of developers creating universal apps.
+- **Styling**: The app uses custom styles defined in the `Weather` component's `styles` object. You can modify these styles to change the appearance of the app.
+- **API Integration**: The app uses the OpenWeatherMap API. You can replace it with another weather API if needed.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+**Author**: Shakhbozbek Usmonov  
+**Email**: [shakhbozbek.usmonov@gmail.com](mailto:shakhbozbek.usmonov@gmail.com)  
+**LinkedIn**: [linkedin.com/in/shakhbozbekusmonov](https://www.linkedin.com/in/shakhbozbekusmonov/)  
+**GitHub**: [github.com/shakhbozbekusmonov](https://github.com/shakhbozbekusmonov)
