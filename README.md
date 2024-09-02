@@ -21,7 +21,7 @@ This is a React Native application that displays the current weather information
 2. **Install the dependencies:**
 
    ```bash
-   npm install
+   bun install
    ```
 
 3. **Create an `.env` file in the root directory and add your OpenWeatherMap API key:**
@@ -34,7 +34,7 @@ This is a React Native application that displays the current weather information
 4. **Start the development server:**
 
    ```bash
-   npm start
+   bun run start
    ```
 
 ## Usage
